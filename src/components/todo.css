@@ -1,0 +1,104 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  font-size: 35px;
+  color: white;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.todo-container {
+  max-width: 500px;
+  background-color: rgb(0, 89, 255);
+  padding: 20px;
+  margin: auto;
+  margin-top: 25vh;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: white;
+  box-shadow: 0 0 5px white;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 0;
+}
+
+.input-field:focus {
+  outline: 0;
+}
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 157, 0.144);
+  cursor: pointer;
+}
+
+.addBtn :active {
+  color: rgb(0, 201, 17);
+}
+
+.list {
+  list-style-type: none;
+  padding: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.list-item:not(:last-child) {
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.check {
+  cursor: pointer;
+}
+
+.item-title {
+  width: 100%;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.deleteBtn {
+  color: red;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 17px;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  color: rgb(151, 0, 0);
+}
+
+.deleteBtn:active {
+  color: rebeccapurple;
+}
+
+.done {
+  text-decoration: line-through;
+  color: rgb(172, 172, 172);
+}
